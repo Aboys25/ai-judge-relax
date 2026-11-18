@@ -1,4 +1,5 @@
 # ai-judge-relax-01 entry (Python 3.13, standard library only).
+# Revision 18 Nov 2026: writes the candidate-G text (blind revision ordered by the person we work for).
 #
 # Writes one short text, composed to relax the reader, to
 # /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt outside the grader).
@@ -11,11 +12,7 @@ import os
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 TEXT = (
-    "Nothing here needs you right now. "
-    "The chair by the window is still warm from the afternoon, "
-    "and the cat asleep on the folded blanket has not moved for an hour. "
-    "The clock ticks once, then waits, as if it too has nowhere to be. "
-    "You can stay exactly as you are."
+    "In the service stairwell, the clipboard under the pressure gauge holds three entries in three different hands, each giving the same figure, and the pencil is tied to the clipboard with string. The gauge reads 2.1."
 )
 
 with open(os.path.join(OUTPUT_DIR, "entry.txt"), "wb") as f:
